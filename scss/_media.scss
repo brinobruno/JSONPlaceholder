@@ -1,0 +1,36 @@
+@media screen and (max-width: 767px) {
+    .main-header {
+        .menu-icon {
+            display: block;
+        }
+            .nav-links {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+
+                @include flexCenter (space-evenly);
+                flex-direction: column;
+
+                padding: 10rem 0;
+                width: 100vw;
+                height: 100vh;
+
+                background: $primary-color;
+                color: $text-color-alt;
+                font-size: 1.8rem;
+
+                transition: 
+                    opacity 0.5s 0.3s,
+                    clip-path 1s 0.3s;
+
+                clip-path: circle(12.5rem at top right);
+            }
+
+                //se estiver checado, procura pelo sibling de nav-links
+                .menu-button:checked ~ .nav-links {
+                    opacity: 1;
+                    clip-path: circle(100% at center);
+                }
+    }
+}

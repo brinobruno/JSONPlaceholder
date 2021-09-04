@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  height: 4.1rem;
+  width: 100vw;
+  padding: 0 10vw;
+  z-index: 1;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  color: #000000;
+}
+
+.main-header a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.main-header .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.main-header .nav-links .nav-link a {
+  color: #ffffff;
+  margin: 0.2rem;
+  padding: 1rem 0.5rem;
+}
+
+.main-header .nav-links .nav-link a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.main-header .menu-icon {
+  position: relative;
+  padding: 1.6rem 0.6rem;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+.main-header .menu-icon__line {
+  display: block;
+  position: relative;
+  height: 0.12rem;
+  width: 1.25rem;
+  border-radius: 0.25rem;
+  background: #ffffff;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.main-header .menu-icon__line::before, .main-header .menu-icon__line::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.25rem;
+  background: #ffffff;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.main-header .menu-icon__line::before {
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+}
+
+.main-header .menu-icon__line::after {
+  -webkit-transform: translateY(0.3rem);
+          transform: translateY(0.3rem);
+}
+
+.main-header .menu-button {
+  display: none;
+}
+
+.main-header.scrolled {
+  height: 4.1rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: #000000;
+}
+
+.main-header.scrolled .menu-icon__line, .main-header.scrolled .menu-icon__line::before, .main-header.scrolled .menu-icon__line::after {
+  background: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .main-header .menu-icon {
+    display: block;
+  }
+  .main-header .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10rem 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    color: #ffffff;
+    font-size: 1.8rem;
+    -webkit-transition: opacity 0.5s 0.3s, -webkit-clip-path 1s 0.3s;
+    transition: opacity 0.5s 0.3s, -webkit-clip-path 1s 0.3s;
+    transition: opacity 0.5s 0.3s, clip-path 1s 0.3s;
+    transition: opacity 0.5s 0.3s, clip-path 1s 0.3s, -webkit-clip-path 1s 0.3s;
+    -webkit-clip-path: circle(12.5rem at top right);
+            clip-path: circle(12.5rem at top right);
+  }
+  .main-header .menu-button:checked ~ .nav-links {
+    opacity: 1;
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.container p {
+  margin: 1rem 0;
+}
+
+.hero {
+  height: 100vh;
+  background: url(../dist/images/background-image.jpg) no-repeat bottom center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10vh;
+  color: #ffffff;
+}
+
+.hero h1 {
+  position: relative;
+  font-size: 4rem;
+  letter-spacing: 0.25rem;
+}
+/*# sourceMappingURL=main.css.map */

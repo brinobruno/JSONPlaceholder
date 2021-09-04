@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./media";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font-family;
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+
+        p {
+            margin: 1rem 0;
+        }
+
+}
+
+// ------------------------ //
+
+.hero {
+    height: 100vh;
+    background: url(../dist/images/background-image.jpg) no-repeat bottom center;
+    background-size: cover;
+    @include flexCenter(center);
+    padding: 0 10vh;
+    color: $text-color-alt;
+
+        h1 {
+            position: relative;
+            font-size: 4rem;
+            letter-spacing: 0.25rem;
+        }
+
+}
