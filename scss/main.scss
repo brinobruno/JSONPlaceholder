@@ -13,6 +13,7 @@
 
 body {
     font-family: $main-font-family;
+    overflow-x: hidden;
 }
 
 .container {
@@ -38,7 +39,7 @@ body {
         h1 {
             position: relative;
             font-size: 4rem;
-            letter-spacing: 0.25rem;
+            letter-spacing: 0.35rem;
         }
 
 }
