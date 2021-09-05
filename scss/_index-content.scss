@@ -1,0 +1,54 @@
+footer {
+    p {
+        @include flexCenter (center);
+    }
+
+    .languages {
+        @include flexCenter (center);
+        max-width: 85vw;
+        margin: 2rem auto;
+        margin-bottom: 7rem;
+
+        img {
+            width: 5.5rem !important;
+            padding: 0 1rem !important;
+        }
+    }
+
+}
+
+.socials {
+        p {
+            @include flexCenter (center);
+        }
+
+    @extend .languages;
+}
+
+.container {
+    width: 80%;
+    margin: 1.5rem auto;
+
+        p {
+            font-size: 1rem;
+            color: $text-color;
+            text-align: center;
+            margin: 1rem 0;
+            max-width: 90vw;
+        }
+
+        .byBruno {
+            font-size: 0.8rem;
+            color: $text-color;
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            max-width: 90vw;
+        }
+
+        i {
+            color: rgb(185, 5, 5);
+            padding-left: 0.25rem;
+        }
+
+}

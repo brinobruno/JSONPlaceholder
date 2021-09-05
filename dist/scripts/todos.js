@@ -1,30 +1,3 @@
-/* const todoUrl = 'https://jsonplaceholder.typicode.com/todos/'
-var results = document.getElementById('results')
-
-fetchTodo = () => {
-    //http req
-
-    fetch(todoUrl)
-    .then ( (data) => {
-        return data.json()
-    })
-
-    .then( (data) => {
-        console.log(data)
-
-        results.forEach(element => {
-            element.innerHTML = `<p>Tarefa: ${data.title}`            
-        });
-
-    })
-
-    .catch( (error) => {
-        console.log(`Um erro foi detectado! ${error}`)
-    })
-}
-
-*/
-
 const todoUrl = 'https://jsonplaceholder.typicode.com/todos/'
 
 getPost = () => {
@@ -35,6 +8,7 @@ getPost = () => {
     })
 
     .then( (data) => {
+        //showing
 
         for (let index = 0; index < 12; index++) {
             div.innerHTML+=
@@ -50,7 +24,16 @@ getPost = () => {
                     </div         
                 `
             cont += 1
+            
         }
+
+        // search
+        const searchInput = document.getElementById('search')
+        for (var indexQ = 0; indexQ < 200; indexQ++) {
+            //console.log(data[indexQ].title)
+        }
+    
+         
     })
 
     .catch( (error) => {

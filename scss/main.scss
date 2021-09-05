@@ -4,62 +4,19 @@
 @import "./mixins";
 @import "./header";
 @import "./media";
-@import "./albuns";
+@import "./hero";
+@import "./content-pages";
+@import "./index-content";
+@import "./about-project";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
     font-family: $main-font-family;
     overflow-x: hidden;
-}
-
-.container {
-    width: 80%;
-    margin: 2rem auto;
-
-        p {
-            font-size: 1rem;
-            color: $text-color;
-            text-align: center;
-            margin: 1rem 0;
-            max-width: 90vw;
-        }
-
-        .byBruno {
-            font-size: 0.8rem;
-            color: $text-color;
-            display: flex;
-            margin: 0;
-            justify-content: center;
-            max-width: 90vw;
-        }
-
-        i {
-            color: rgb(185, 5, 5);
-            padding-left: 0.25rem;
-        }
-
-}
-
-// ------------------------ //
-
-.hero {
-    height: 100vh;
-    background: $primary-color;
-    background-size: cover;
-    @include flexCenter(center);
-    flex-direction: column;
-    padding: 0 10vh;
-    color: $text-color;
-
-        h1 {
-            position: relative;
-            font-size: 4rem;
-            letter-spacing: 0.35rem;
-        }
-
 }

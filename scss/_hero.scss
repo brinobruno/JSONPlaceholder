@@ -1,0 +1,54 @@
+.hero {
+    height: 100vh;
+    background: $primary-color;
+    background-size: cover;
+    @include flexCenter(center);
+    flex-direction: column;
+    padding: 0 10vh;
+    color: $text-color;
+
+    .typing-text {
+        position: relative;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0.15rem;
+            height: 90%;
+            background: $text-color;
+            animation: blinkCursor 0.8s steps(3) infinite;
+        }
+
+        @keyframes blinkCursor {
+            0%, 75%
+            {
+                opacity: 1;
+            }
+            76%, 100%
+            {
+                opacity: 0;
+            }
+        }
+
+            h1 {
+                font-size: 4rem;
+                letter-spacing: 0.25rem;
+                
+                position: relative;
+                animation: typing 7s steps(6) infinite;
+                overflow: hidden
+            }
+
+            @keyframes typing {
+                0%, 90%, 100% {
+                    width: 0;
+                }
+                20%, 70% {
+                    width: 18.18rem;
+                }
+            }
+    }           //total wid 17.8, 1.75 letter spacing
+
+}

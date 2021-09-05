@@ -2,6 +2,7 @@
 
 .btn-primary {
 
+    margin: 7rem 0;
     color: #fff;
     background-color: $quaternary-color;
     border-color: $secondary-color;
@@ -32,11 +33,11 @@
     margin: auto;
 }
 
+//
 
-
-
-
-
+h1 {
+    letter-spacing: 0.3rem;
+}
 
 .container-posts {
     padding-top: 10%;
@@ -53,5 +54,5 @@
 
 .hero-posts {
     @extend .hero;
-    height: 60vh !important;
+    height: 70vh !important;
 }
