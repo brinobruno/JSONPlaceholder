@@ -1,0 +1,57 @@
+// Bootstrap overriding
+
+.btn-primary {
+
+    color: #fff;
+    background-color: $quaternary-color;
+    border-color: $secondary-color;
+
+    &:hover {   
+        background-color: $secondary-color;
+        border-color: $quaternary-color;
+    }
+
+    &:focus {
+        background-color: $secondary-color;
+        border-color: quaternary-color;
+    }
+
+}
+
+#btn {
+    width: 8.5rem;
+    max-width: 8.5rem;
+}
+
+.card {
+    background-color: $tertiary-color;
+}
+
+.row {
+    max-width: 85vw;
+    margin: auto;
+}
+
+
+
+
+
+
+
+.container-posts {
+    padding-top: 10%;
+}
+
+.main-header {
+
+    .albuns {
+        a {
+            color: black;
+            }
+    }  
+}
+
+.hero-posts {
+    @extend .hero;
+    height: 60vh !important;
+}

@@ -25,6 +25,18 @@
                     clip-path 1s 0.3s;
 
                 clip-path: circle(12.5rem at top right);
+
+                    .nav-link {
+
+                        a {
+                            color: $text-color;
+                        }
+
+                        a.scrolled {
+                            color: $text-color;
+                        }
+
+                    }
             }
 
                 //se estiver checado, procura pelo sibling de nav-links

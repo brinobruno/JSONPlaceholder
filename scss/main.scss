@@ -4,6 +4,7 @@
 @import "./mixins";
 @import "./header";
 @import "./media";
+@import "./albuns";
 
 * {
     margin: 0;
@@ -21,7 +22,25 @@ body {
     margin: 2rem auto;
 
         p {
+            font-size: 1rem;
+            color: $text-color;
+            text-align: center;
             margin: 1rem 0;
+            max-width: 90vw;
+        }
+
+        .byBruno {
+            font-size: 0.8rem;
+            color: $text-color;
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            max-width: 90vw;
+        }
+
+        i {
+            color: rgb(185, 5, 5);
+            padding-left: 0.25rem;
         }
 
 }
@@ -30,11 +49,12 @@ body {
 
 .hero {
     height: 100vh;
-    background: url(../dist/images/background-image.jpg) no-repeat bottom center;
+    background: $primary-color;
     background-size: cover;
     @include flexCenter(center);
+    flex-direction: column;
     padding: 0 10vh;
-    color: $text-color-alt;
+    color: $text-color;
 
         h1 {
             position: relative;

@@ -13,9 +13,17 @@
         a {
             font-size: 0.9rem;
             text-decoration: none;
-            color: $text-color-alt;
+            color: $text-color;
             text-transform: uppercase;
             letter-spacing: 0.25rem;
+        }
+
+        .logo a {
+            color: $text-color;
+
+            &.scrolled {
+                color: $text-color-alt;
+            }
         }
 
             .nav-links {
@@ -25,13 +33,17 @@
                     .nav-link {
 
                         a {
-                            color: $text-color-alt;
+                            color: $text-color;
                             margin: 0.2rem;
                             padding: 1rem 0.5rem;
                         }
 
                             a:hover {
                                 background: $color-alt-opacity;
+                            }
+
+                            a.scrolled {
+                                color: $text-color-alt;
                             }
 
                     }
@@ -88,9 +100,10 @@
                 &__line, 
                 &__line::before,
                 &__line::after {
-                    background: $secondary-color;
+                    background: $primary-color;
                 }
-            }
     }
+
+} 
 
 }
