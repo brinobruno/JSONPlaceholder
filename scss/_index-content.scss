@@ -18,11 +18,10 @@ footer {
 }
 
 .socials {
+    @extend .languages;
         p {
             @include flexCenter (center);
         }
-
-    @extend .languages;
 }
 
 .container {
