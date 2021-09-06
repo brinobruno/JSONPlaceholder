@@ -14,6 +14,8 @@ Você pode acessar por [aqui] 👈
 
 > Projeto sugerido pelos Jedi <3
 
+API Utilizada: https://jsonplaceholder.typicode.com/
+
 ### Ajustes e melhorias a serem feitas:
 
 - [ ] Criar funcionalidade de filtragem por pesquisa;
